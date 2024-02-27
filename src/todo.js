@@ -15,12 +15,13 @@ export default function createTodo(task, notes = "", priority = 0, dueDate = "")
         dueDate = newDate;
     }
 
-    const getTodo = () => {
+    const getTodo = () => ({
         task,
         notes,
         priority,
         dueDate
-    }
+        }
+    )
 
     return {
         getTodo,
@@ -30,3 +31,4 @@ export default function createTodo(task, notes = "", priority = 0, dueDate = "")
         changePriority
     }
 }
+
