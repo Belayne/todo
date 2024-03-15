@@ -5,6 +5,14 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    static: './dist',
+    static: './src',
   },
+  module: {
+    rules: [
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+    ]
+  }
 });
