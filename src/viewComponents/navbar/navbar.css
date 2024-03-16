@@ -1,0 +1,54 @@
+@import url("../../style.css");
+
+#navbar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#navTitle {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#dateNavigation {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+#navbar a {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+}
+
+#createButton {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#createButton:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+img {
+    padding-right: 10px;
+}
+
+a:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+#projectNavigation {
+    display: grid;
+}
