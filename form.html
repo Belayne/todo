@@ -9,19 +9,22 @@
 </head>
 
 <body>
-    <form>
-        <input type="text" name="task" placeholder="Enter new task here" required id="task">  
-        <div>
-        <label for="priority">Priority</label>
-        <select name="priority" id="priority">
-            <option value="0">Low</option>
-            <option value="1">Medium</option>
-            <option value="2">High</option>
-        </select>
+    <div id="container">
+        <div id="projectContainer">
+            <div id="titleContainer">
+                <h2 id="projectTitle">new Project</h2>
+                <p id="projectDescription">This is something that I have todo(ha) description description deccetera rpeat this to test the width I know it's written poorly</p>
+            </div>
+            <div id="todoListContainer">
+                <div class="todoItem" data-todoid="">
+                    <input type="checkbox" id="sampleid">
+                    <label for="sampleid" class="task">Complete todo list app even if it's taking way too long</label>
+                    <p class="dueDate">23/10/97</p>
+                </div>
+            </div>
+            <button id="createTodoButton">CREATE TODO</button>
         </div>
-        <input type="date" name="dueDate" id="dueDate">
-        <input type="text" placeholder="Add notes" name="notes" id="notes">
-    </form>
+    </div>
 </body>
 
 </html>

@@ -1,1 +1,42 @@
-@import url("./reset.css")
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    font-family: "Lato";
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+#container {
+    display: grid;
+    column-gap: 4vw;
+    grid-template-columns: 1fr 7fr;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+

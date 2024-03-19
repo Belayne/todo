@@ -1,20 +1,22 @@
 class Todo {
-    constructor(task, notes = "", dueDate = "", priority = "") {
+    constructor(task, notes = "", dueDate = "", priority = "", isDone = false) {
         this.task = task;
         this.priority = priority;
         this.dueDate = dueDate;
         this.notes = notes;
+        this.isDone = isDone;
     }
 }
 
 class Project {
-    constructor(title = "New project", todoList = []) {
+    constructor(title = "New project", description = "",todoList = []) {
         this.title = title;
+        this.description = description;
         this.todoList = todoList;
     }
 
     addTodo(newTodo) {
-        this.todoList.push(newTodo);
+        this.todoList.unshift(newTodo);
     }
 
     removeTodo(index) {
@@ -29,8 +31,8 @@ class ProjectList {
     }
 
     addProject(newProject) {
-        this.projects.push(newProject)
-        this.switchProject(this.projects.length - 1);
+        this.projects.unshift(newProject)
+        this.switchProject(0);
     }
 
     removeProject() {
